@@ -128,4 +128,12 @@ module.exports = (baseURL) => ({
     callback: `${baseURL}/patreon/callback`,
     scope: ['identity', 'identity[email]'],
   },
+  nextauth: {
+    enabled: true,
+    icon: '',
+    key: '',
+    secret: '',
+    callback: `${baseURL}/nextauth/callback`,
+    scope: [],
+  }
 });

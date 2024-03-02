@@ -302,6 +302,32 @@ const getInitialProviders = ({ purest }) => ({
         };
       });
   },
+  async nextauth({ accessToken, query }) {
+    const nextAuthClient = purest({
+      provider: 'nextauth',
+      config: {
+        nextauth: {
+          default: {
+            origin: query.origin,
+            path: query.path,
+            headers: {
+              authorization: 'Bearer {auth}',
+            },
+          },
+        },
+      },
+    });
+    try {
+      const data = await nextAuthClient.auth(accessToken).request();
+      return {
+        username: data.body.email,
+        email: data.body.email
+      }
+    } catch (error) {
+      console.log("ERROR:")
+      console.log(error);
+    }
+  },
   async patreon({ accessToken }) {
     const patreon = purest({
       provider: 'patreon',
