@@ -1,6 +1,6 @@
 {
   "name": "@strapi/helper-plugin",
-  "version": "4.20.2",
+  "version": "4.20.3",
   "description": "Helper for Strapi plugins development",
   "repository": {
     "type": "git",
@@ -71,8 +71,8 @@
     "@strapi/admin-test-utils": "4.20.2",
     "@strapi/design-system": "1.14.1",
     "@strapi/icons": "1.14.1",
-    "@strapi/pack-up": "4.20.2",
-    "@strapi/types": "4.20.2",
+    "@strapi/pack-up": "^4.20.3",
+    "@strapi/types": "^4.20.3",
     "@testing-library/react": "14.0.0",
     "@testing-library/user-event": "14.4.3",
     "cross-env": "^7.0.3",

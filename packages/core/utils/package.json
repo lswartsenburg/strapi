@@ -1,6 +1,6 @@
 {
   "name": "@strapi/utils",
-  "version": "4.20.2",
+  "version": "4.20.3",
   "description": "Shared utilities for the Strapi packages",
   "keywords": [
     "strapi",
@@ -52,8 +52,8 @@
     "yup": "0.32.9"
   },
   "devDependencies": {
-    "@strapi/pack-up": "4.20.2",
-    "@strapi/types": "4.20.2",
+    "@strapi/pack-up": "^4.20.3",
+    "@strapi/types": "^4.20.3",
     "@types/koa": "2.13.4",
     "@types/node": "18.18.4",
     "eslint-config-custom": "4.20.2",
